@@ -24,7 +24,7 @@ h4{
 
 
 .timeline-4:nth-of-type(even){
-    transform: translateX(-400%);
+    transform: translateX(-200%);
 }
 
 .timeline-4.show{
@@ -62,19 +62,21 @@ h4{
     align-items: center;
     justify-content: center;
     justify-items: center;
+    color: #fff;
     background-color: #038d64;
 
 }
 
 .wrapper{
+    /*width: 100%;
+    height: 50vh;*/
     display: grid;
-    grid-template-columns: repeat(2,150px);
+    /*background: #06c;*/
+    grid-template-columns: repeat(2,300px);
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(120px, auto);
     align-items: center;
-    justify-content: center;
-    
-    
+    justify-content: center;   
 }
 
 .grid-img2{
@@ -82,6 +84,23 @@ h4{
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.grid-body1{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
 }
 
 .grid-body2{
@@ -99,49 +118,132 @@ h4{
     flex-direction: column;
     justify-content: center;
     transition: 1s;
+}
 
+.grid-body3{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+}
+
+.grid-body4{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+}
+
+.wrapper:hover .grid-body1{
+  right: 0;
 }
 
 .wrapper:hover .grid-body2{
     right: 0;
 }
 
+.wrapper:hover .grid-body3{
+  right: 0;
+}
+
+.wrapper:hover .grid-body4{
+  right: 0;
+}
+
 .dos{
-    width: 150px;
-    height: 180px;
+    width: 280px;
+    height: 200px;
     border-radius: 20px;
     overflow: hidden;
     border: 8px solid #038d64;
     position: relative;
+    background-color: #038d64;
 }
 .tres{
-    width: 150px;
-    height: 180px;
+    width: 280px;
+    height: 200px;
     border-radius: 20px;
     overflow: hidden;
     border: 8px solid #f8b601;
     position: relative;
+    background-color: #f8b601;
 }
 .uno{
-    width: 150px;
-    height: 180px;
+    width: 280px;
+    height: 200px;
     border-radius: 20px;
-    overflow: hidden;
+    overflow:hidden;
     border: 8px solid #008d1f;
-    position: relative;
+    position:relative;
+    background-color: #008d1f; 
 }
 
 .cuatro{
-    width: 150px;
-    height: 180px;
+    width: 280px;
+    height: 200px;
     border-radius: 20px;
     overflow: hidden;
     border: 8px solid #b31f1f;
     position: relative;
+    background-color: #b31f1f;
 }
 
+.grid-title{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 300;
+}
 
-
+.grid-info{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+ /*icono*/
+.fire-btn{
+  position: absolute;
+  color: #2e2e41;
+  font-size: 5.8em;
+  padding: 10px;
+  cursor: pointer;
+} 
+ /*
+.fire-btn{
+  left: 0;
+  background: linear-gradient(to left, transparent, #2e2e41 80%);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: none;
+}
+/*
+.right-btn{
+  right: 0;
+  background: linear-gradient(to right, transparent,  #2e2e41 80%);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+*/
 
     /******section pestañas*********/
 
