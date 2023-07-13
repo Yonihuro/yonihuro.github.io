@@ -13,10 +13,20 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
 <style>
+/**/
+ 
+
+/***/
 .container{
-    overflow: scroll;
+    /*overflow: scroll;*/
     position: relative;
 }
+
+#scrollspy1,#scrollspy2,#scrollspy3{
+  padding-top: 20px;
+}
+
+
     /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
   position: relative;
@@ -134,39 +144,39 @@
 }
   </style>
 </head>
-<body class="container">
+<body class="container"  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-offset="50">
     <!--SECCION 0 -->
     <!--MODULO DE CAROUSEL IMAGENES-->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 80%;">
+    <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 80%;">
       <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
+        <div class="carousel-item active" data-bs-interval="4000">
           <img src="https://i.postimg.cc/wvQdHCRV/FOTO-1.jpg" class="d-block w-100 mx-auto border rounded" style=" width: 100%; height: 500px; background: #1f3d4738; backdrop-filter: blur(5px);"  alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="card-title" style="position: absolute; top: -50px; background: rgba(0,0,0,0.7);"> </h5>
             <p class="card-text" style="background: rgba(0,0,0,0.7);">MINAM promueve la identificación in situ de existencias de PCB en sitios sensibles con miras a la gestión ambientalmente racional de dichos contaminantes.</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="4000">
           <img src="https://i.postimg.cc/Jn2G3HKv/Foto-2.jpg" class="d-block w-100 mx-auto border rounded" style=" width: 100%; height: 500px; background: #1f3d4738; backdrop-filter: blur(5px);"  alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="card-title" style="position: absolute; top: -50px; background: rgba(0,0,0,0.7);"> </h5>
             <p class="card-text" style="background: rgba(0,0,0,0.7);">MINAM publicó el Plan Nacional de Aplicación Actualizado del Convenio de Estocolmo sobre Contaminantes Orgánicos Persistentes con el objetivo de fortalecer la gestión de los químicos en el país y lograr la reducción de los riesgos a la salud humana y el ambiente por causa de estos.</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="4000">
           <img src="https://i.postimg.cc/02LyyqHG/Foto-3.jpg" class="d-block w-100 mx-auto border rounded" style=" width: 100%; height: 500px;" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="card-title" style="position: absolute; top: -50px; background: rgba(0,0,0,0.7);"> </h5>
             <p class="card-text" style="background: rgba(0,0,0,0.7);">La delegación de Perú participó en la Undécima reunión de la Conferencia de las Partes en el Convenio de Estocolmo que se llevó a cabo en Ginebra del 1 al 12 de mayo de 2023, cuyo tema principal fue "Acelerar la acción: objetivos para la gestión racional de los productos químicos y los desechos".</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000" >
+        <div class="carousel-item" data-bs-interval="4000" >
               <img src="https://images.unsplash.com/photo-1548561711-73eae96ad48d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1891&q=80" class="d-block w-100  mx-auto border rounded"  style=" width: 100%; height: 500px;" alt="...">
               <div class="carousel-caption d-none d-md-block">
                   <h5 class="card-title" style="position: absolute; top: -50px; background: rgba(0,0,0,0.7);"> </h5>
@@ -183,34 +193,34 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  <br>
-      <!--PESTAÑA DE NAVEGACION TABS-->
-      <!--navegacion-->
+    <!--PESTAÑA DE NAVEGACION TABS-->
+    <!--navegacion-->
       <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 mb-3 sticky-top navbar-expand-lg">
-          <a class="navbar-brand" href="#carouselExampleInterval">PLAN DE ESTOCOLMO</a>
+          <a class="navbar-brand" href="#carouselInterval"> </a>
           <ul class="nav nav-pills">
               <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading1">Conceptos Básicos</a>
+                  <a class="nav-link" href="#scrollspy1">Conceptos Básicos</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading2">PNAA Estocolmo</a>
+                  <a class="nav-link" href="#scrollspy2">PNAA Estocolmo</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading3">Avances y Logros</a>
+                  <a class="nav-link" href="#scrollspy3">Avances y Logros</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading4">Informacion Complementaria</a>
+                  <a class="nav-link" href="#scrollspy4">Informacion Complementaria</a>
               </li>
           </ul>
       </nav>
       <!--fin de pestaña de navegacion tabs-->
-      <br>
+    
       <!--inicio de scrollspy-->
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
-          <h4 id="">CONCEPTOS BASICOS</h4>
+      <div data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
           <!--SECCION 1-->
           <!--MODULO 1-->
-          <section id="scrollspyHeading1">
+          <!--<h6 id="" class="top">CONCEPTOS BASICOS</h6>-->
+          <section id="scrollspy1">
+            
               <div class="accordion" id="accordionPanelsStayOpenExample">
                   <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -284,12 +294,11 @@
           </section>
           -->
           <!-- FIN MODULO 1 / SECCION 1 -->
-          <br>
-          <h4 id=" ">PNAA ESTOCOLMO</h4>
           <!--SECCION 2-->
           <!--MODULO 2-->
-          <br>
-          <div id="scrollspyHeading2">
+           
+          <div id="scrollspy2">
+            <h4 id=" ">PNAA ESTOCOLMO</h4>
               <div class="row row-cols-1 row-cols-md-2 g-4">
                   <div class="col">
                       <div class="card h-100 text-bg-success ">
@@ -418,16 +427,154 @@
               </div>
           </div>
           <br>
-          <h4 id="scrollspyHeading3">AVANCES Y LOGROS</h4>
+          <div id="scrollspy3"><h4>AVANCES Y LOGROS</h4>
+            <!--
             <div class="tab-pane fade" id="tabs-text-2" role="tabpanel" aria-labelledby="tabs-text-2-tab">
               <div style="width:100%;height:700px; position:relative; overflow:hidden">
-                  <iframe scrolling="no" seamless="seamless" src="https://sinia.minam.gob.pe/vista-pnic" style="top:-160px; position:absolute"width="1000" height="1000"  frameborder="1" >
+                  <iframe scrolling="no" seamless="seamless" src="https://sinia.minam.gob.pe/vista-pnic" style="top:-160px; position:absolute" width="1000" height="1000"  frameborder="1" >
                       <p>texto alternativo para navegadores que no aceptan iframes.</p>
                   </iframe>
               </div>
             </div>
+            <div class="ratio ratio-16x9">
+              <iframe scrolling="no" seamless="seamless"  src="https://sinia.minam.gob.pe/vista-pnic" frameborder="1" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            -->
+            <table class="table table-striped">
+              <thead class="bg-light">
+                <tr>
+                  <th>INFORMACION AMBIENTAL</th>
+                  <th>COMPONENTE / FACTOR</th>
+                  <th>ENTIDAD</th>
+                  <th>METADATOS</th>
+                  <th>DATA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><p>Concentraciones de Coliformes termotolerantes en (UFC) de los sistemas de agua potable de las Empresas Prestadoras</p></td>
+                  <td><p>Agua superficial	/ Calidad del agua superficial</p></td>
+                  <td>Superintendencia Nacional de Servicios de Saneamiento</td>
+                  <td><a href=""></a>  link </td>
+                  <td><a href=""></a>2021</td>
+                </tr>
+                <tr>
+                  <td><p>Concentraciones de Coliformes termotolerantes en (UFC) de los sistemas de agua potable de las Empresas Prestadoras</p></td>
+                  <td><p>Agua superficial	/ Calidad del agua superficial</p></td>
+                  <td>Superintendencia Nacional de Servicios de Saneamiento</td>
+                  <td><a href=""></a>  link </td>
+                  <td><a href=""></a>2021</td>
+                </tr>
+                <tr>
+                  <td><p>Concentraciones de Coliformes termotolerantes en (UFC) de los sistemas de agua potable de las Empresas Prestadoras</p></td>
+                  <td><p>Agua superficial	/ Calidad del agua superficial</p></td>
+                  <td>Superintendencia Nacional de Servicios de Saneamiento</td>
+                  <td><a href=""></a>  link </td>
+                  <td><a href=""></a>2021</td>
+                </tr>
+                <tr>
+                  <td><p>Concentraciones de Coliformes termotolerantes en (UFC) de los sistemas de agua potable de las Empresas Prestadoras</p></td>
+                  <td><p>Agua superficial	/ Calidad del agua superficial</p></td>
+                  <td>Superintendencia Nacional de Servicios de Saneamiento</td>
+                  <td><a href=""></a>  link </td>
+                  <td><a href=""></a>2021</td>
+                </tr>
+                <tr>
+                  <td><p>Concentraciones de Coliformes termotolerantes en (UFC) de los sistemas de agua potable de las Empresas Prestadoras</p></td>
+                  <td><p>Agua superficial	/ Calidad del agua superficial</p></td>
+                  <td>Superintendencia Nacional de Servicios de Saneamiento</td>
+                  <td><a href=""></a>  link </td>
+                  <td><a href=""></a>2021</td>
+                </tr>
+              </tbody>
+            </table>
+            
           <p>...</p>
-          <h4 id="scrollspyHeading4">INFORMACION COMPLEMENTARIA</h4>
+          </div>
+          <div id="scrollspy4"><p>INFORMACION COMPLEMENTARIA</p>
+            <div class="container text-center my-3">
+              <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+              <div class="row mx-auto my-auto justify-content-center">
+                  <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner" role="listbox">
+                          <div class="carousel-item active">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-img">
+                                          <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                      </div>
+                                      <div class="card-img-overlay">Slide 1</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-img">
+                                          <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                      </div>
+                                      <div class="card-img-overlay">Slide 2</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-img">
+                                          <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                      </div>
+                                      <div class="card-img-overlay">Slide 3</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-img">
+                                          <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                      </div>
+                                      <div class="card-img-overlay">Slide 4</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-img">
+                                          <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                      </div>
+                                      <div class="card-img-overlay">Slide 5</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-img">
+                                          <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                      </div>
+                                      <div class="card-img-overlay">Slide 6</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>
+                      <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </a>
+                  </div>
+              </div>
+              <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+            </div>
+
+
+
+
+          </div>
+
+
           <p>...</p>
 
           <br>
@@ -435,6 +582,6 @@
 
 
       </div>
-
+      
 </body>
 </html>
