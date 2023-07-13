@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNI COPs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
@@ -11,7 +12,7 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 <style>
 /**/
  
@@ -156,7 +157,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="4000">
-          <img src="https://i.postimg.cc/wvQdHCRV/FOTO-1.jpg" class="d-block w-100 mx-auto border rounded" style=" width: 100%; height: 500px; background: #1f3d4738; backdrop-filter: blur(5px);"  alt="...">
+          <img src="https://i.postimg.cc/wvQdHCRV/FOTO-1.jpg" class="object-fit-scale border rounded" style=" width: 100%;  height: 500px; background: #1f3d4738; backdrop-filter: blur(5px);"  alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 class="card-title" style="position: absolute; top: -50px; background: rgba(0,0,0,0.7);"> </h5>
             <p class="card-text" style="background: rgba(0,0,0,0.7);">MINAM promueve la identificación in situ de existencias de PCB en sitios sensibles con miras a la gestión ambientalmente racional de dichos contaminantes.</p>
@@ -184,11 +185,11 @@
               </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon " aria-hidden="true" ></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -230,18 +231,18 @@
                       </h2>
                       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                           <div class="accordion-body">
-                            <strong>¿Qué son los Contaminantes Orgánicos Persistentes (COP)?</strong>
-                            <p>Son un grupo de sustancias químicas que tienen las siguientes características:</p>
-                            <ul>
+                            <p class="text-primary fw-bold">¿Qué son los Contaminantes Orgánicos Persistentes (COP)?</p>
+                            <p class="text-primary text-opacity-75">Son un grupo de sustancias químicas que tienen las siguientes características:</p>
+                            <ul class="text-primary text-opacity-75">
                               <li>Tóxicos</li>
                               <li>Persistentes</li>
                               <li>Bioacumulables</li>
                               <li>Biomagnificables</li>
                               <li>Transportables</li>
                             </ul>
-                            <div class="alert alert-success" role="alert">
-                              Mas Información en el siguiente <a href="#" class="alert-link"> link</a>.
-                            </div>
+                            <p class="text-primary text-opacity-75">
+                              Mas Información en el siguiente<button type="button" class="btn btn-link "><a href="#" class="link-primary fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> link</a>.</button>
+                            </p>
                           </div>
                       </div>
                   </div>
@@ -253,7 +254,7 @@
                       </h2>
                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                           <div class="accordion-body">
-                          <strong>Titulo 2.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the  , though the transition does limit overflow.
+                          <p class="text-primary fw-bold"> Titulo 2.</p> <p class="text-primary text-opacity-75">It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the  , though the transition does limit overflow.</p>
                           </div>
                       </div>
                   </div>
@@ -265,13 +266,13 @@
                       </h2>
                       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                           <div class="accordion-body">
-                          <strong>Convenio de Estocolmo sobre Contaminantes Orgánicos Persistentes</strong>
-                          <p>Es un tratado internacional que tiene como <strong>objetivo proteger la salud humana y el medio ambiente frente a los contaminantes orgánicos persistentes.</strong></p>
-                          <br>
-                          <p>Dicho convenio fue suscrito <strong>el 22 de mayo de 2001 en la ciudad de Estocolmo, Reino de Suecia, y ratificado el 10 de agosto de 2005 a través del Decreto Supremo N° 067-2005-RE.</strong></p>
-                          <div class="alert alert-success" role="alert">
-                            Descargue el convenio <a href="#" class="alert-link"> link</a>.
-                          </div>
+                            <p class="text-primary fw-bold">Convenio de Estocolmo sobre Contaminantes Orgánicos Persistentes</p>
+                            <p class="text-primary text-opacity-75">Es un tratado internacional que tiene como <strong>objetivo proteger la salud humana y el medio ambiente frente a los contaminantes orgánicos persistentes.</strong></p>
+                            <br>
+                            <p class="text-primary text-opacity-75">Dicho convenio fue suscrito <strong>el 22 de mayo de 2001 en la ciudad de Estocolmo, Reino de Suecia, y ratificado el 10 de agosto de 2005 a través del Decreto Supremo N° 067-2005-RE.</strong></p>
+                            <p class="text-primary text-opacity-75">
+                              Descargue el convenio <button type="button" class="btn btn-link "><a href="#" class="link-primary fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> link</a>.</button>
+                            </p>
                         </div>
                       </div>
                   </div>
@@ -301,44 +302,56 @@
             <h4 id=" ">PNAA ESTOCOLMO</h4>
               <div class="row row-cols-1 row-cols-md-2 g-4">
                   <div class="col">
-                      <div class="card h-100 text-bg-success ">
+                      <div class="card h-100 text-bg-success bg-opacity-75">
+                          <div class="card-header text-bg-success fw-bold">
+                            EJE 1
+                          </div>
                           <img src="https://images.unsplash.com/photo-1549132734-353aad5e228c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" class="card-img-top" style="width: 100%; height: 50%;" alt="...">
                           <div class="card-body">
                           <h5 class="card-title">Plaguicidas COP</h5>
                           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          <a href="#" class="btn btn-primary">Ver Datos</a>
+                          <p class="card-text"><small class="text-muted"></small></p>
+                          <a href="#" class="btn btn-success">Ver Datos</a>
                           </div>
                       </div>
                   </div>
                   <div class="col">
-                      <div class="card h-100 text-bg-info">
+                      <div class="card h-100 text-bg-info bg-opacity-75">
+                          <div class="card-header text-bg-info fw-bold">
+                            EJE 2
+                          </div>
                           <img src="https://images.unsplash.com/photo-1549411364-9d5c5e493ce4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" class="card-img-top" style="width: 100%; height: 50%;" alt="...">
                           <div class="card-body">
                               <h5 class="card-title">COP Industriales</h5>
                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <p class="card-text"><small class="text-muted"></small></p>
                           </div>
                       </div>
                   </div>
                   <br>
                   <div class="col"> 
-                      <div class="card h-100 text-bg-warning mb-3">
+                      <div class="card h-100 text-bg-warning bg-opacity-75">
+                          <div class="card-header text-bg-warning fw-bold">
+                            EJE 3
+                          </div>
                           <img src="https://images.unsplash.com/photo-1549132734-353aad5e228c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" class="card-img-top" style="width: 100%; height: 50%;" alt="...">
                           <div class="card-body">
-                          <h5 class="card-title">COP No Intencionales</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">COP No Intencionales</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
                           </div>
                       </div>
                   </div>
                   <div class="col"> 
-                      <div class="card h-100 text-bg-danger ">
+                      <div class="card h-100 text-bg-danger bg-opacity-75">
+                          <div class="card-header text-bg-danger  fw-bold">
+                            EJE 4
+                          </div>
                           <img src="https://images.unsplash.com/photo-1549411364-9d5c5e493ce4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" class="card-img-top" style="width: 100%; height: 50%;" alt="...">
                           <div class="card-body">
                               <h5 class="card-title">Acciones Transversales</h5>
                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <p class="card-text"><small class="text-muted"></small></p>
                           </div>
                       </div>
                   </div>  
@@ -427,7 +440,7 @@
               </div>
           </div>
           <br>
-          <div id="scrollspy3"><h4>AVANCES Y LOGROS</h4>
+          <div id="scrollspy3"><p>AVANCES Y LOGROS</p>
             <!--
             <div class="tab-pane fade" id="tabs-text-2" role="tabpanel" aria-labelledby="tabs-text-2-tab">
               <div style="width:100%;height:700px; position:relative; overflow:hidden">
@@ -493,7 +506,7 @@
           </div>
           <div id="scrollspy4"><p>INFORMACION COMPLEMENTARIA</p>
             <div class="container text-center my-3">
-              <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+              <h2 class="font-weight-light">Resoluciones</h2>
               <div class="row mx-auto my-auto justify-content-center">
                   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner" role="listbox">
@@ -566,7 +579,7 @@
                       </a>
                   </div>
               </div>
-              <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+              <h5 class="mt-2 fw-light">slide de resoluciones</h5>
             </div>
 
 
